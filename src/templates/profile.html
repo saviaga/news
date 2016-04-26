@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container retuitea-form">
+
+    <h3>Hola {{opcion1}}</h3>
+
+    <p><h5>¿Qué tweet quieres retutear ?</h5></p>
+
+    <form id="tweet-form" action="/profile" method="post">
+
+
+      <div class="form-group">
+         <label>Tweet ID</label>
+
+        <input type="text" id="tweet_id" class="form-control" name="tweet_id" value={{tweet_id}}>
+      </div>
+
+
+	  <blockquote class="twitter-tweet"><a href={{tweet_id}}></a></blockquote>
+
+
+      <button type="submit" class="btn btn-success">Enviar</button>
+
+
+
+        <p>
+
+
+        </p>
+        <h4>Quien retuiteará</h4>
+
+		 <div class="form-group">
+         <label>Usuario que va a retuitear</label>
+         <input type="number" id="usuario_id" class="form-control" name="usuario_id" value="0">
+		 <br>
+		 <button type="submit" class="btn btn-success">Enviar</button>
+
+			   <p>
+				    <br>
+				   {{datos}}
+			   </p>
+      </div>
+
+      <table class="table">
+
+	<tbody>
+		<tr>
+			<td>
+				1. 1agustin_paez
+			</td>
+			<td>
+				7. agustin_mac
+			</td>
+			<td>
+				13. Informativo_Ver
+			</td>
+			<td>
+				19. GleyFernando
+			</td>
+            <td>
+				25. Salir
+			</td>
+		</tr>
+		<tr>
+			<td>
+				2. dani_mar2343
+			</td>
+			<td>
+				8. yol_tenorio
+			</td>
+			<td>
+				14. SamsaraCervant
+			</td>
+			<td>
+				20. ArrolloRodolfo
+			</td>
+            <td>
+
+			</td>
+		</tr>
+		<tr>
+			<td>
+				3. edgar_s3212
+			</td>
+			<td>
+				9. robledomartin
+			</td>
+			<td>
+				15. odalys_mendo
+			</td>
+			<td>
+				21. EpicentroVer
+			</td>
+		</tr>
+		<tr>
+			<td>
+				4. silvia_gut1
+			</td>
+			<td>
+				10. jor_moca
+			</td>
+			<td>
+				16. prinzoeherrera
+			</td>
+			<td>
+				22. armandoferrarif
+			</td>
+		</tr>
+		<tr>
+			<td>
+				5. karla_truji
+			</td>
+			<td>
+				11. guz_nelly
+			</td>
+			<td>
+				17. greta_reyes21
+			</td>
+			<td>
+				23. leocasol
+			</td>
+		</tr>
+		<tr>
+			<td>
+				6. la_basicamente
+			</td>
+			<td>
+				12. rodriguezbre81
+			</td>
+			<td>
+				18. PamyRoche
+			</td>
+			<td>
+				24. Todos
+			</td>
+		</tr>
+	</tbody>
+</table>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+{% endblock %}
