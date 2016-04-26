@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1>Hola {{opcion1}}</h1>
+    <p>Que tweet quieres retutear ?</p>
+    <form id="tweet-form" action="/profile" method="post">
+
+      <input type="text" id="tweet_id" name="tweet_id">
+      <input type="number" id="usuario_id" name="usuario_id">
+      <input type="submit" id="submit-button3">
+
+    </form>
+    <h1>{{tweet_id}}</h1>
+
+    <h1>{{tweet}}</h1>
+
+                      <p>Quien tuiteará</p>
+                      <p>1. 1agustin_paez</p>
+                      <p>2. dani_mar2343</p>
+                      <p>3. edgar_s3212</p>
+                      <p>4. silvia_gut1</p>
+                      <p>5. karla_truji</p>
+                      <p>6. la_basicamente</p>
+                      <p>7. agustin_mac</p>
+                      <p>8. yol_tenorio</p>
+                      <p>9. robledomartin</p>
+                      <p>10. adizan86</p>
+                      <p>11. jor_moca</p>
+                      <p>11. jor_moca</p>
+                      <p>12. guz_nelly</p>
+                      <p>13. rodriguezbre81</p>
+                      <p>14. Informativo_Ver</p>
+                      <p>15. SamsaraCervant</p>
+                      <p>16. odalys_mendoz</p>
+                      <p>17. prinzoeherrera</p>
+                      <p>18. greta_reyes21</p>
+                      <p>19. PamyRoche</p>
+                      <p>20. GleyFernando</p>
+                      <p>21. ArrolloRodolfo</p>
+                      <p>22. EpicentroVer</p>
+                      <p>23. armandoferrarif</p>
+                      <p>24. leocasol</p>
+                      <p>25. Todos</p>
+                      <p>26. Salir</p>
+
+
+
+
+
+     <h1>Usuario</h1>
+     <p>{{usuario_id}}</p>
+
+{% endblock %}
