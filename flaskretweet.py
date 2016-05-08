@@ -1,5 +1,5 @@
 from bot import *
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request,flash
 from usuarios import *
 
 app = Flask(__name__)
@@ -40,7 +40,6 @@ def retweet_me():
     botname = user
     # fin identifica
     mensaje = ''
-
     tweet_id = request.form['tweet_id']
     lenght = len(tweet_id)
     str1 = str(tweet_id)
@@ -61,7 +60,7 @@ def retweet_me():
             agustin_paez.api.retweet(tweetes)
             mensaje='agustin_paez ha retuiteado'
         except Exception as e:
-           mensaje = ("error",e)
+            mensaje = ("error",e)
 
     elif usuario_id == 2:
         try:
