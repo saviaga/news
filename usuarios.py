@@ -85,6 +85,7 @@ auth7 = tweepy.OAuthHandler(consumer_key7, consumer_secret7)
 auth7.set_access_token(access_token7, access_token_secret7)
 api7= tweepy.API(auth7)
 
+
 la_basicamente = retrive_twitter_info.GetTwitterInfo(consumer_key7,consumer_secret7,access_token7,access_token_secret7,user7)
 
 
