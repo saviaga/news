@@ -406,7 +406,7 @@ def retweet_me():
 
         try:
             leocasol.api.retweet(tweetes)
-            mensaje = 'leocasol ha retuiteado'
+            mensaje = 'leocasol ya ha retuiteado'
             time.sleep(60)
 
         except Exception as e:

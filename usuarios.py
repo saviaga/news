@@ -122,9 +122,6 @@ api10= tweepy.API(auth10)
 
 robledomartin = retrive_twitter_info.GetTwitterInfo(consumer_key10,consumer_secret10,access_token10,access_token_secret10,user10)
 
-
-
-
 user12 = "jor_moca"
 consumer_key12 = "rzJQY2tOu5UrY9LyPFvgryKig"
 consumer_secret12 = "5nokDyEvk35jPjUtEnt1zlFQpKbZlhpMUaEtKalDfAXzKKRjnM"
