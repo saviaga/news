@@ -79,8 +79,8 @@ karla_truji = retrive_twitter_info.GetTwitterInfo(consumer_key6,consumer_secret6
 user7 = "la_basicamente"
 consumer_key7 = "hRDJ3298tK7LectpTCK0Ws9QD"
 consumer_secret7 = "SO4z15OzaU55sQX8BmZt1dCLoaB4V92roniZxeANPNkaUnTAzw"
-access_token7 = "4714297429-2Y6pwqPpHVOo9pVVjE4mCwKuFw56BtKjbrTW4A3"
-access_token_secret7 = "aU8p42RB9Vq1TL6iSEcA2WPNtJAwxSLkjggtZ6U2PRVuy"
+access_token7 = "4714297429-sadf2cExrZI3alPN7z7eBvgEY3rMzrfpwPYwL7X"
+access_token_secret7 = "tnLHxobxw6nT1iTScvCbRyhvzhwcsK5bmZ5miOn91NvFS"
 auth7 = tweepy.OAuthHandler(consumer_key7, consumer_secret7)
 auth7.set_access_token(access_token7, access_token_secret7)
 api7= tweepy.API(auth7)
