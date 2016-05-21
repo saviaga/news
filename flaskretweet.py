@@ -177,7 +177,7 @@ def retweet_me():
 
     elif usuario_id == 18:
         try:
-            PamyRoche.api.retweet(tweetes)
+           # PamyRoche.api.retweet(tweetes)
             mensaje = 'PamyRoche ha retuiteado'
         except Exception as e:
             mensaje = ("error", e)

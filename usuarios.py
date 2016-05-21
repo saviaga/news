@@ -223,7 +223,7 @@ auth20 = tweepy.OAuthHandler(consumer_key20, consumer_secret20)
 auth20.set_access_token(access_token20, access_token_secret20)
 api20= tweepy.API(auth20)
 
-PamyRoche = retrive_twitter_info.GetTwitterInfo(consumer_key20,consumer_secret20,access_token20,access_token_secret20,user20)
+#PamyRoche = retrive_twitter_info.GetTwitterInfo(consumer_key20,consumer_secret20,access_token20,access_token_secret20,user20)
 
 user21 = "GleyFernando"
 consumer_key21 = "c1anEPUQYG8QJ2m06Mcz8FhK6"
