@@ -51,7 +51,7 @@ edgar_s3212 = retrive_twitter_info.GetTwitterInfo(consumer_key3,consumer_secret3
 #auth4.set_access_token(access_token4, access_token_secret4)
 #api4= tweepy.API(auth4)
 
-vercomunica = retrive_twitter_info.GetTwitterInfo(consumer_key4,consumer_secret4,access_token4,access_token_secret4,user4)
+#vercomunica = retrive_twitter_info.GetTwitterInfo(consumer_key4,consumer_secret4,access_token4,access_token_secret4,user4)
 
 user5 = "silvia_gut1"
 consumer_key5 = "fRa9liyp3smVvNXhibSvbOLzK"
