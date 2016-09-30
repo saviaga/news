@@ -42,14 +42,14 @@ api3= tweepy.API(auth3)
 edgar_s3212 = retrive_twitter_info.GetTwitterInfo(consumer_key3,consumer_secret3,access_token3,access_token_secret3,user3)
 
 
-user4 = "VerComunica"
-consumer_key4 = "tC8Vmf3NP3GA0JT4sjh1p21Im"
-consumer_secret4 = "SNpHt4d8yA5Nt32g9NF6Qs73KypzInw0Vq8pf6QZbMwX43aEx2"
-access_token4 = "3526348696-DPVwM3EUcuZRhZQoEnUwHSNpWsECHgULL0h6DRD"
-access_token_secret4 = "SMVckSFCKbuR8d28s5ZSPYiZPNVEWmP9dS2shjpB5PPP9"
-auth4 = tweepy.OAuthHandler(consumer_key4, consumer_secret4)
-auth4.set_access_token(access_token4, access_token_secret4)
-api4= tweepy.API(auth4)
+#user4 = "VerComunica"
+#consumer_key4 = "tC8Vmf3NP3GA0JT4sjh1p21Im"
+#consumer_secret4 = "SNpHt4d8yA5Nt32g9NF6Qs73KypzInw0Vq8pf6QZbMwX43aEx2"
+#access_token4 = "3526348696-DPVwM3EUcuZRhZQoEnUwHSNpWsECHgULL0h6DRD"
+#access_token_secret4 = "SMVckSFCKbuR8d28s5ZSPYiZPNVEWmP9dS2shjpB5PPP9"
+#auth4 = tweepy.OAuthHandler(consumer_key4, consumer_secret4)
+#auth4.set_access_token(access_token4, access_token_secret4)
+#api4= tweepy.API(auth4)
 
 vercomunica = retrive_twitter_info.GetTwitterInfo(consumer_key4,consumer_secret4,access_token4,access_token_secret4,user4)
 
