@@ -66,10 +66,10 @@ silvia_gut1 = retrive_twitter_info.GetTwitterInfo(consumer_key5,consumer_secret5
 
 
 user6 = "karla_truji"
-consumer_key6 = "y3awmQFWBeDSBcJHUO5r3yKMR"
-consumer_secret6 = "rI2DYkzA2U4HncrlocbWLgo4skwPEkjWgwt7Tlrq7IhrlrMXmD"
-access_token6 = "716366278185758720-zH23or64wsAaKTKNU60NP99nmDb3K9i"
-access_token_secret6 = "SUNcdcXB2L9zVU6OHu6VGIJm1VFmfXRdgn29gQZXj1vzp"
+consumer_key6 = "p6lcOkx1N7v4luBor9GQPl4sj"
+consumer_secret6 = "VZQQTYZZ1doBtLso16vwurQE5PeQMy5GP18G2TYh2wP64DyTsv"
+access_token6 = "716366278185758720-2yCvyZflePZbP2jjor2StNzoxmS5jOF"
+access_token_secret6 = "92KTrn56FS7vfLUJ2NGa7FoL7ve13NdAuxxNXh43VXnFI"
 auth6 = tweepy.OAuthHandler(consumer_key6, consumer_secret6)
 auth6.set_access_token(access_token6, access_token_secret6)
 api6= tweepy.API(auth6)
