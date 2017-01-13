@@ -38,10 +38,19 @@ def scrap_note():
     global Link
     global answer
     global Medio
+    global a1
+    global Titulo_get
+    global Texto1
+    global Texto
+    global news
+    news= dict()
     answer = request.form.getlist('myInputs[]')
     for a in answer:
-        print(a)
-    page = requests.get('http://www.xeu.com.mx/nota.cfm?id=882994')
+        a1=a
+        news[a] = a
+    for d in news:
+        print ("dic value ", news[d])
+    page = requests.get(a1)
     tree = html.fromstring(page.content)
     # This will create a list of buyers:
 
@@ -53,37 +62,27 @@ def scrap_note():
     # for tas in task_Option:
     #    print(tas)
     # Link  = request.form['link_id']
-
-
-
-    for a in answer:
-        print(a)
-
-        #print(answer)
-
-        # for entry in Inputs:
-        #    print(entry)
-        # print(Inputs)
-        if task_Option == 'XEU':
+    if task_Option == 'XEU':
             try:
-
-
                 #Link = "http://www.xeu.com.mx/nota.cfm?id=883134"
-                Link = a
+                Link = a1
+                print("link ",Link)
                 Medio = "XEU"
 
-                global Titulo_get
+
                 Titulo_get = tree.xpath('//div[@class="fgtitulo"]/text()')
                 for x in Titulo_get:
                     x = x.encode("utf-8")
                 Titulo_get = Titulo_get[0]
-                #   print(x)
+                print("titulo get", Titulo_get)
+
 
                 # This will create a list of prices
-                global Texto
+
                 Texto = tree.xpath('//div[@class="fatrece"]//text()')
                 Texto = [x.rstrip() for x in Texto]
                 Texto = Texto[1]
+                print("Texto[1] ", Texto[1])
                 for text in Texto:
                     Texto1 = Texto + text
                     # print (Texto1)
@@ -94,7 +93,7 @@ def scrap_note():
             except Exception as e:
                 mensaje = ("error", e)
 
-        return render_template("notas.html", datos=task_Option, titulo=Titulo_get, texto=Texto1, link=Link, medio=Medio,
+    return render_template("notas.html", datos=task_Option, titulo=Titulo_get, texto=Texto1, link=Link, medio=Medio,
                                fecha=Fecha_get)
 
 
