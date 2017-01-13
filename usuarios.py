@@ -15,7 +15,7 @@ auth1 = tweepy.OAuthHandler(consumer_key1, consumer_secret1)
 auth1.set_access_token(access_token1, access_token_secret1)
 api1 = tweepy.API(auth1)
 
-agustin_paez = retrive_twitter_info.GetTwitterInfo(consumer_key1,consumer_secret1,access_token1,access_token_secret1,user1)
+#agustin_paez = retrive_twitter_info.GetTwitterInfo(consumer_key1,consumer_secret1,access_token1,access_token_secret1,user1)
 
 
 user2 = "dani_mar2343"
@@ -27,7 +27,7 @@ auth2 = tweepy.OAuthHandler(consumer_key2, consumer_secret2)
 auth2.set_access_token(access_token2, access_token_secret2)
 api2 = tweepy.API(auth2)
 
-dani_mar2343 = retrive_twitter_info.GetTwitterInfo(consumer_key2,consumer_secret2,access_token2,access_token_secret2,user2)
+#dani_mar2343 = retrive_twitter_info.GetTwitterInfo(consumer_key2,consumer_secret2,access_token2,access_token_secret2,user2)
 
 
 user3 = "edgar_s3212"
@@ -39,7 +39,7 @@ auth3 = tweepy.OAuthHandler(consumer_key3, consumer_secret3)
 auth3.set_access_token(access_token3, access_token_secret3)
 api3= tweepy.API(auth3)
 
-edgar_s3212 = retrive_twitter_info.GetTwitterInfo(consumer_key3,consumer_secret3,access_token3,access_token_secret3,user3)
+#edgar_s3212 = retrive_twitter_info.GetTwitterInfo(consumer_key3,consumer_secret3,access_token3,access_token_secret3,user3)
 
 
 #user4 = "VerComunica"
@@ -62,7 +62,7 @@ auth5 = tweepy.OAuthHandler(consumer_key5, consumer_secret5)
 auth5.set_access_token(access_token5, access_token_secret5)
 api5= tweepy.API(auth5)
 
-silvia_gut1 = retrive_twitter_info.GetTwitterInfo(consumer_key5,consumer_secret5,access_token5,access_token_secret5,user5)
+#silvia_gut1 = retrive_twitter_info.GetTwitterInfo(consumer_key5,consumer_secret5,access_token5,access_token_secret5,user5)
 
 
 user6 = "karla_truji"
@@ -74,7 +74,7 @@ auth6 = tweepy.OAuthHandler(consumer_key6, consumer_secret6)
 auth6.set_access_token(access_token6, access_token_secret6)
 api6= tweepy.API(auth6)
 
-karla_truji = retrive_twitter_info.GetTwitterInfo(consumer_key6,consumer_secret6,access_token6,access_token_secret6,user6)
+#karla_truji = retrive_twitter_info.GetTwitterInfo(consumer_key6,consumer_secret6,access_token6,access_token_secret6,user6)
 
 user7 = "la_basicamente"
 consumer_key7 = "hRDJ3298tK7LectpTCK0Ws9QD"
@@ -86,7 +86,7 @@ auth7.set_access_token(access_token7, access_token_secret7)
 api7= tweepy.API(auth7)
 
 
-la_basicamente = retrive_twitter_info.GetTwitterInfo(consumer_key7,consumer_secret7,access_token7,access_token_secret7,user7)
+#la_basicamente = retrive_twitter_info.GetTwitterInfo(consumer_key7,consumer_secret7,access_token7,access_token_secret7,user7)
 
 
 user8 = "agustin_mac"
@@ -98,7 +98,7 @@ auth8 = tweepy.OAuthHandler(consumer_key8, consumer_secret8)
 auth8.set_access_token(access_token8, access_token_secret8)
 api8= tweepy.API(auth8)
 
-agustin_mac = retrive_twitter_info.GetTwitterInfo(consumer_key8,consumer_secret8,access_token8,access_token_secret8,user8)
+#agustin_mac = retrive_twitter_info.GetTwitterInfo(consumer_key8,consumer_secret8,access_token8,access_token_secret8,user8)
 
 
 user9 = "yol_tenorio"
@@ -110,7 +110,7 @@ auth9 = tweepy.OAuthHandler(consumer_key9, consumer_secret9)
 auth9.set_access_token(access_token9, access_token_secret9)
 api9= tweepy.API(auth9)
 
-yol_tenorio = retrive_twitter_info.GetTwitterInfo(consumer_key9,consumer_secret9,access_token9,access_token_secret9,user9)
+#yol_tenorio = retrive_twitter_info.GetTwitterInfo(consumer_key9,consumer_secret9,access_token9,access_token_secret9,user9)
 
 user10 = "_robledomartin"
 consumer_key10 = "hVQCTjr1s4vaWsyj3rLfbAfqJ"
@@ -121,7 +121,7 @@ auth10 = tweepy.OAuthHandler(consumer_key10, consumer_secret10)
 auth10.set_access_token(access_token10, access_token_secret10)
 api10= tweepy.API(auth10)
 
-robledomartin = retrive_twitter_info.GetTwitterInfo(consumer_key10,consumer_secret10,access_token10,access_token_secret10,user10)
+#robledomartin = retrive_twitter_info.GetTwitterInfo(consumer_key10,consumer_secret10,access_token10,access_token_secret10,user10)
 
 user12 = "jor_moca"
 consumer_key12 = "rzJQY2tOu5UrY9LyPFvgryKig"
@@ -132,7 +132,7 @@ auth12 = tweepy.OAuthHandler(consumer_key12, consumer_secret12)
 auth12.set_access_token(access_token12, access_token_secret12)
 api12= tweepy.API(auth12)
 
-jor_moca = retrive_twitter_info.GetTwitterInfo(consumer_key12,consumer_secret12,access_token12,access_token_secret12,user12)
+#jor_moca = retrive_twitter_info.GetTwitterInfo(consumer_key12,consumer_secret12,access_token12,access_token_secret12,user12)
 
 user13 = "guz_nelly"
 consumer_key13 = "ic7rbwsbHFEaAg2Oq49NNX69f"
@@ -143,7 +143,7 @@ auth13 = tweepy.OAuthHandler(consumer_key13, consumer_secret13)
 auth13.set_access_token(access_token13, access_token_secret13)
 api13= tweepy.API(auth13)
 
-guz_nelly = retrive_twitter_info.GetTwitterInfo(consumer_key13,consumer_secret13,access_token13,access_token_secret13,user13)
+#guz_nelly = retrive_twitter_info.GetTwitterInfo(consumer_key13,consumer_secret13,access_token13,access_token_secret13,user13)
 
 user14 = "rodriguezbre81"
 consumer_key14 = "WRrgq3W48vXLz7x7E9pDPRWpy"
@@ -154,7 +154,7 @@ auth14 = tweepy.OAuthHandler(consumer_key14, consumer_secret14)
 auth14.set_access_token(access_token14, access_token_secret14)
 api14= tweepy.API(auth14)
 
-rodriguezbre81 = retrive_twitter_info.GetTwitterInfo(consumer_key14,consumer_secret14,access_token14,access_token_secret14,user14)
+#rodriguezbre81 = retrive_twitter_info.GetTwitterInfo(consumer_key14,consumer_secret14,access_token14,access_token_secret14,user14)
 
 user15 = "Informativo_Ver"
 consumer_key15 = "xKtju84veeMRe3xxKrX4TF7YJ"
@@ -165,7 +165,7 @@ auth15 = tweepy.OAuthHandler(consumer_key15, consumer_secret15)
 auth15.set_access_token(access_token15, access_token_secret15)
 api15= tweepy.API(auth15)
 
-Informativo_Ver = retrive_twitter_info.GetTwitterInfo(consumer_key15,consumer_secret15,access_token15,access_token_secret15,user15)
+#Informativo_Ver = retrive_twitter_info.GetTwitterInfo(consumer_key15,consumer_secret15,access_token15,access_token_secret15,user15)
 
 user16 = "SamsaraCervant"
 consumer_key16 = "N6Ohopb7YrdKZPwwsGm3xkD8v"
@@ -177,7 +177,7 @@ auth16.set_access_token(access_token16, access_token_secret16)
 api16= tweepy.API(auth16)
 
 
-SamsaraCervant = retrive_twitter_info.GetTwitterInfo(consumer_key16,consumer_secret16,access_token16,access_token_secret16,user16)
+#SamsaraCervant = retrive_twitter_info.GetTwitterInfo(consumer_key16,consumer_secret16,access_token16,access_token_secret16,user16)
 
 user17 = "odalys_mendoz"
 consumer_key17 = "CB6ri7KuIw6PcQ21HfdSwrUkq"
@@ -189,7 +189,7 @@ auth17.set_access_token(access_token17, access_token_secret17)
 api17= tweepy.API(auth17)
 
 
-odalys_mendoz = retrive_twitter_info.GetTwitterInfo(consumer_key17,consumer_secret17,access_token17,access_token_secret17,user17)
+#odalys_mendoz = retrive_twitter_info.GetTwitterInfo(consumer_key17,consumer_secret17,access_token17,access_token_secret17,user17)
 
 user18 = "prinzoeherrera"
 consumer_key18 = "CBHm2CT6sWLpUgIDh6yy2m4Ia"
@@ -200,7 +200,7 @@ auth18 = tweepy.OAuthHandler(consumer_key18, consumer_secret18)
 auth18.set_access_token(access_token18, access_token_secret18)
 api18= tweepy.API(auth18)
 
-prinzoeherrera = retrive_twitter_info.GetTwitterInfo(consumer_key18,consumer_secret18,access_token18,access_token_secret18,user18)
+#prinzoeherrera = retrive_twitter_info.GetTwitterInfo(consumer_key18,consumer_secret18,access_token18,access_token_secret18,user18)
 
 user19 = "greta_reyes21"
 consumer_key19 = "68zC8xM54xZkUwo9GfZLEYqdW"
@@ -211,7 +211,7 @@ auth19 = tweepy.OAuthHandler(consumer_key19, consumer_secret19)
 auth19.set_access_token(access_token19, access_token_secret19)
 api19= tweepy.API(auth19)
 
-greta_reyes21 = retrive_twitter_info.GetTwitterInfo(consumer_key19,consumer_secret19,access_token19,access_token_secret19,user19)
+#greta_reyes21 = retrive_twitter_info.GetTwitterInfo(consumer_key19,consumer_secret19,access_token19,access_token_secret19,user19)
 
 
 user20 = "PamyRoche"
@@ -235,7 +235,7 @@ auth21.set_access_token(access_token21, access_token_secret21)
 api21= tweepy.API(auth21)
 
 
-GleyFernando = retrive_twitter_info.GetTwitterInfo(consumer_key21,consumer_secret21,access_token21,access_token_secret21,user21)
+#GleyFernando = retrive_twitter_info.GetTwitterInfo(consumer_key21,consumer_secret21,access_token21,access_token_secret21,user21)
 
 
 user22 = "ArrolloRodolfo"
@@ -247,7 +247,7 @@ auth22 = tweepy.OAuthHandler(consumer_key22, consumer_secret22)
 auth22.set_access_token(access_token22, access_token_secret22)
 api22= tweepy.API(auth22)
 
-ArrolloRodolfo = retrive_twitter_info.GetTwitterInfo(consumer_key22,consumer_secret22,access_token22,access_token_secret22,user22)
+#ArrolloRodolfo = retrive_twitter_info.GetTwitterInfo(consumer_key22,consumer_secret22,access_token22,access_token_secret22,user22)
 
 user23 = "EpicentroVer"
 consumer_key23 = "bwp4YiPyGkf7WokI9UyRJlhgp"
@@ -258,7 +258,7 @@ auth23 = tweepy.OAuthHandler(consumer_key23, consumer_secret23)
 auth23.set_access_token(access_token23, access_token_secret23)
 api23= tweepy.API(auth23)
 
-EpicentroVer = retrive_twitter_info.GetTwitterInfo(consumer_key23,consumer_secret23,access_token23,access_token_secret23,user23)
+#EpicentroVer = retrive_twitter_info.GetTwitterInfo(consumer_key23,consumer_secret23,access_token23,access_token_secret23,user23)
 
 user24 = "armandoferrarif"
 consumer_key24 = "VSg9b9S11jQbllSXNKX2vO4zD"
@@ -269,7 +269,7 @@ auth24 = tweepy.OAuthHandler(consumer_key24, consumer_secret24)
 auth24.set_access_token(access_token24, access_token_secret24)
 api24= tweepy.API(auth24)
 
-armandoferrarif = retrive_twitter_info.GetTwitterInfo(consumer_key24,consumer_secret24,access_token24,access_token_secret24,user24)
+#armandoferrarif = retrive_twitter_info.GetTwitterInfo(consumer_key24,consumer_secret24,access_token24,access_token_secret24,user24)
 
 user25 = "leocasol"
 consumer_key25 = "OuoLmQhquecjFsMapWoRw92f2"
@@ -282,4 +282,4 @@ api25= tweepy.API(auth25)
 
 
 
-leocasol = retrive_twitter_info.GetTwitterInfo(consumer_key25,consumer_secret25,access_token25,access_token_secret25,user25)
+#leocasol = retrive_twitter_info.GetTwitterInfo(consumer_key25,consumer_secret25,access_token25,access_token_secret25,user25)
