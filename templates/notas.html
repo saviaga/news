@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+{% block content %}
+<script src="/wp-includes/js/addInput.js" language="Javascript" type="text/javascript"></script>
+<div class="container notasa-form">
+
+    <h3>Hola {{opcion1}}</h3>
+
+    <p><h5>¿A qué nota le damos formato?</h5></p>
+
+    <form id="notas-form" action="/notas" method="post">
+
+
+      <!--div class="form-group">
+         <label>Link</label>
+
+        <input type="text" id="link_id" class="form-control" name="link_id" value={{link_id}}>
+      </div-->
+
+
+
+      <!--button type="submit" class="btn btn-success">Enviar</button-->
+
+        <div id="dynamicInput">
+          Entry 1<br><input type="text" name="myInputs[]">
+        </div>
+        <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+
+        <p>
+
+
+        </p>
+        <h4>Que medio</h4>
+        <p>
+				    <br>
+				   {{datos}}
+        </p>
+
+		 <div class="form-group">
+         <label>Medio al que pertenece la nota</label>
+         </div>
+		 <select name="taskOption">
+  			<option value="XEU">XEU</option>
+ 			 <option value="alcalor">Al Calor Politico</option>
+ 			 <option value="imagen">Imagen del Golfo</option>
+			 <option value="veracruzanos">Veracruzanos.info</option>
+             <option value="cambio">Cambio Digital</option>
+		 </select>
+
+         <button type="submit" class="btn btn-success">Enviar</button>
+
+
+                    <table class="table">
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    {{titulo}}
+                                    <br>
+                                    {{medio}}
+                                    <br>
+                                    {{link}}
+                                </td>
+                                <td>
+                                    {{fecha}}
+                                </td>
+                                <td>
+                                    {{texto}}
+                                    <br>
+
+                                    <br>
+
+                                    <br>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+
+
+    </form>
+
+
+
+
+</div>
+<script>
+
+
+    var counter = 1;
+    var limit = 10;
+    function addInput(divName){
+     if (counter == limit)  {
+          alert("You have reached the limit of adding " + counter + " inputs");
+     }
+     else {
+          var newdiv = document.createElement('div');
+          newdiv.innerHTML = "Entry " + (counter + 1) + " <br><input type='text' name='myInputs[]'>";
+          document.getElementById(divName).appendChild(newdiv);
+          counter++;
+     }
+
+
+    }
+
+
+</script>
+
+
+{% endblock %}
