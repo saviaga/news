@@ -21,9 +21,9 @@
       <!--button type="submit" class="btn btn-success">Enviar</button-->
 
         <div id="dynamicInput">
-          Entry 1<br><input type="text" name="myInputs[]">
+          Nota 1<br><input type="text" name="myInputs[]">
         </div>
-        <input type="button" value="Add another text input" onClick="addInput('dynamicInput');">
+        <input type="button" value="Agregar otra nota (mismo medio)" onClick="addInput('dynamicInput');">
 
         <p>
 
@@ -47,74 +47,40 @@
 		 </select>
 
          <button type="submit" class="btn btn-success">Enviar</button>
-        {% for t in titulo %}
-            <div><p>{{ titulo }} </p></div>
-        {% endfor %}
 
-                    <table class="table">
+
+                    <table class="table" border="1">
 
                         <tbody>
+                        {% for t in noticias %}
 
-                            <tr>
-                                <td>
-                                    {{titulo}}
-                                    <br>
-                                    {{medio}}
-                                    <br>
-                                    {{link}}
-                                </td>
-                                <td>
-                                    {{fecha}}
-                                </td>
-                                <td>
-                                    {{texto}}
-                                    <br>
-
-                                    <br>
-
-                                    <br>
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-
-                                </td>
-                            </tr>
 
                             <tr>
                                 <td>
 
+                                    <br>
+                                    {{ noticias[t][0]}}
+                                    <br>
+
                                 </td>
+
                                 <td>
+
+                                    <br>
+                                    {{ noticias[t][2]}}
 
                                 </td>
                                 <td>
 
-                                </td>
-                                <td>
+                                    <br>
+                                    {{ noticias[t][1]}}
 
                                 </td>
-                                <td>
 
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-
-                                </td>
-                                <td>
-
-                                </td>
                             </tr>
 
 
+                        {% endfor %}
                         </tbody>
                     </table>
 
@@ -132,11 +98,11 @@
     var limit = 10;
     function addInput(divName){
      if (counter == limit)  {
-          alert("You have reached the limit of adding " + counter + " inputs");
+          alert("Has alcanzado el limite de " + counter + " notas");
      }
      else {
           var newdiv = document.createElement('div');
-          newdiv.innerHTML = "Entry " + (counter + 1) + " <br><input type='text' name='myInputs[]'>";
+          newdiv.innerHTML = "Nota " + (counter + 1) + " <br><input type='text' name='myInputs[]'>";
           document.getElementById(divName).appendChild(newdiv);
           counter++;
      }

@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, flash
 from usuarios import *
 from lxml import html
 import requests
+import json
 
 app = Flask(__name__)
 
@@ -43,15 +44,19 @@ def scrap_note():
     global Texto1
     global Texto
     global news
-    news= dict()
+    news= {}
     answer = request.form.getlist('myInputs[]')
+
     for a in answer:
         a1=a
-        news[a] = a
-    for d in news:
-        print ("dic value ", news[d])
-    page = requests.get(a1)
-    tree = html.fromstring(page.content)
+        news[a]=a
+        print("imprimiendo primera guardada ", news[a])
+
+    #loop through dictionary
+    for x in news:
+        print("valores ",news[x])
+
+    print(list(news.keys()))
     # This will create a list of buyers:
 
     # Inputs = []
@@ -62,39 +67,50 @@ def scrap_note():
     # for tas in task_Option:
     #    print(tas)
     # Link  = request.form['link_id']
+
+
     if task_Option == 'XEU':
             try:
                 #Link = "http://www.xeu.com.mx/nota.cfm?id=883134"
-                Link = a1
-                print("link ",Link)
+                #Link = a1
+                #print("link ",Link)
                 Medio = "XEU"
+                for d in news:
+                    print("dic value ", news[d])
+                    page = requests.get(news[d])
+                    tree = html.fromstring(page.content)
 
-
-                Titulo_get = tree.xpath('//div[@class="fgtitulo"]/text()')
-                for x in Titulo_get:
-                    x = x.encode("utf-8")
-                Titulo_get = Titulo_get[0]
-                print("titulo get", Titulo_get)
-
-
+                    Titulo_get = tree.xpath('//div[@class="fgtitulo"]/text()')
+                    #print("titulo get1", Titulo_get)
+                    for x in Titulo_get:
+                        x = x.encode("utf-8")
+                    Titulo_f = Titulo_get[0]
                 # This will create a list of prices
 
-                Texto = tree.xpath('//div[@class="fatrece"]//text()')
-                Texto = [x.rstrip() for x in Texto]
-                Texto = Texto[1]
-                print("Texto[1] ", Texto[1])
-                for text in Texto:
-                    Texto1 = Texto + text
-                    # print (Texto1)
-                Fecha_get = tree.xpath('//div[@class="faonce"]/text()')
-                Fecha_get = [x.rstrip() for x in Fecha_get]
-                Fecha_get = Fecha_get[3]
+                    Texto = tree.xpath('//div[@class="fatrece"]//text()')
+                    Texto = [x.rstrip() for x in Texto]
+                    Textof = Texto[1]
+
+
+                    Fecha_get = tree.xpath('//div[@class="faonce"]/text()')
+                    Fecha_get = [x.rstrip() for x in Fecha_get]
+                    Fecha_getf = Fecha_get[3][1:]
+
+                    news[d] = [Titulo_f]
+                    news[d].append(Textof)
+                    news[d].append(Fecha_getf)
+
+                    print("titulo1 desp 2o append ", news[d])
+                    for k in news:
+                        print(k)
+
+
+
 
             except Exception as e:
                 mensaje = ("error", e)
 
-    return render_template("notas.html", datos=task_Option, titulo=Titulo_get, texto=Texto1, link=Link, medio=Medio,
-                               fecha=Fecha_get)
+    return render_template("notas.html", datos=task_Option, noticias=news)
 
 
 @app.route("/profile", methods=['POST'])
